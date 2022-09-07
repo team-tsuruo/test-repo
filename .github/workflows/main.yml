@@ -22,7 +22,7 @@ jobs:
         id: generate_token
         uses: tibdex/github-app-token@v1
         with:
-          test_id: ${{ secrets.TEST }}
+          app_id: ${{ secrets.TEST }}
       - name: use token
         run: echo "$GITHUB_TOKEN"
         env:
