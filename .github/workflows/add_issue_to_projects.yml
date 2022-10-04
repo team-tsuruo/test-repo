@@ -16,7 +16,7 @@ jobs:
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
-      - uses: actions/add-to-project@v0.2.0
+      - uses: actions/add-to-project@v0.3.0
         with:
           project-url: https://github.com/orgs/team-tsuruo/projects/1
           github-token: ${{ steps.generate_token.outputs.token }}
